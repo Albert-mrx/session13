@@ -1,0 +1,20 @@
+<p class="text-center title">Uso de pipes</p>
+<article class="hola">
+      <article class="input-group flex-nowrap ">
+        <section class="flex-nowrap">
+          <section class="row">
+            <label for="" class="col">Valor</label>
+            <!-- valor de entrada -->
+            <input type="text" class="form-control col" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" [(ngModel)]="valor">
+          </section>
+          <section>
+                      <!-- valor de salida -->
+          <p class="col"> Resultado: {{valor | uppercase}}</p>
+          </section>
+        </section>
+      </article>
+</article>
+<article class="json-container">
+  <pre>{{fileJson |json}}</pre>
+</article>
+
